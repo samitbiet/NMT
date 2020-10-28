@@ -57,6 +57,10 @@ decoder = models.Decoder(
 # init optimizer
 optimizer = tf.keras.optimizers.Adam()
 
+#logdir = os.path.join("/content/NMT/logs", datetime.datetime.now().strftime("%Y%m%d-%H%M%S"))
+#tensorboard_callback = tf.keras.callbacks.TensorBoard(logdir, histogram_freq=1)
+
+
 # init checkpoint 
 checkpoint_dir = '/content/NMT/models/training_checkpoints'
 checkpoint_prefix = os.path.join(checkpoint_dir, "ckpt")
